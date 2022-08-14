@@ -1,0 +1,43 @@
+.navBar{
+    width: 100%;
+    height: 80px;
+    padding: 1rem;
+
+    background-color: #fff;
+    color:#807d7d;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+
+    
+}
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+.nav-list{
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 80px;
+    object-fit: cover;
+    margin:0;
+    padding: 0;
+}
+.nav-item-logo{
+display: flex;
+align-items: center;
+gap:0.5rem;
+}
+.active{
+    color:black;
+    font-weight: 800;
+}

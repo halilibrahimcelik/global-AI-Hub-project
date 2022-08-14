@@ -2,11 +2,7 @@ import { Fragment } from "react";
 import AppRouter from "./routes/AppRouter";
 
 function App() {
-  return (
-    <Fragment>
-      <AppRouter />
-    </Fragment>
-  );
+  return <AppRouter />;
 }
 
 export default App;
