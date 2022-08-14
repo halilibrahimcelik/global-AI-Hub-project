@@ -1,7 +1,9 @@
 import React from "react";
+import Listings from "../../components/listings/Listings";
+import { useAuthContext } from "../../hook/AuthContext";
 
 const AllCourses = () => {
-  return <div>AllCourses</div>;
+  <div>all courses</div>;
 };
 
 export default AllCourses;

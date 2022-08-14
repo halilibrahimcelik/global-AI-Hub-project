@@ -16,7 +16,7 @@ const AuthContextProvider = (props) => {
   const fetchMyCourses = async () => {
     try {
       const response = await fetch(
-        "https://40060bec-d8e7-4ad2-96c2-63b9fdb4ef24.mock.pstmn.io/wp-json/ldlms/v2/sfwd-courses"
+        "https://40060bec-d8e7-4ad2-96c2-63b9fdb4ef24.mock.pstmn.io/wp-json/ldlms/v2/my_courses"
       );
       const data = await response.json();
       if (!response.ok) {
@@ -33,7 +33,7 @@ const AuthContextProvider = (props) => {
   const fetchAllCourses = async () => {
     try {
       const response = await fetch(
-        "https://40060bec-d8e7-4ad2-96c2-63b9fdb4ef24.mock.pstmn.iö/wp-json/ldlms/v2/sfwd-courses"
+        "https://40060bec-d8e7-4ad2-96c2-63b9fdb4ef24.mock.pstmn.io/wp-json/ldlms/v2/sfwd-courses"
       );
       const data = await response.json();
       if (!response.ok) {
