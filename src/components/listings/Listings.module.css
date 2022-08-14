@@ -1,3 +1,6 @@
+.list-item{
+    position: relative;
+}
 .image{
     width: 25rem;
     border-radius: 10px;
@@ -13,6 +16,11 @@
 .image:hover{
     opacity: 0.89;
     filter: grayscale(50%);
+}
+
+
+.pop-up-container{
+   position: absolute; 
 }
 
 @media (max-width:1000px){
