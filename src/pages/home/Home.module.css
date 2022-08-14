@@ -1,0 +1,49 @@
+.header{
+
+    margin-top: 8rem;
+    text-align: center;
+}
+
+
+.info{
+    display: flex;
+  gap: 2rem;
+margin-top: 5rem;
+    max-height: 40vh;
+}
+.text{
+    flex: 1 auto;
+    max-width: 30rem;
+}
+
+.image{
+    width: 100%;
+    max-height: 300px;
+
+}
+
+@media  (max-width:1000px){
+    .image{
+        width: 100%;
+        max-height: 200px;
+    
+    }
+}
+@media  (max-width:768px){
+    .info{
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+       padding: 2rem;
+    
+    }
+    .image{
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    
+    }
+    .text{
+        width: 10rem;
+    }
+}
