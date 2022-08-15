@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The purpose of this project is to create  a website where the user can display various course option provided by Global AI Hub.
 
-In this project I used private API to fetch the data.
+In this project I used private API to fetch the data and  manage the date by using custom React Hook.
 
 I used CSS module for the styling the website
 
