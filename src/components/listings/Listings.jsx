@@ -8,7 +8,7 @@ import { GoLinkExternal } from "react-icons/go";
 const Listings = (props) => {
   const {
     card_image,
-    description,
+
     link,
     title,
     categories,

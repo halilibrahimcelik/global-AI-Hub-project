@@ -1,10 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import styles from "./AllListings.module.css";
 import defaultLogo from "../../assets/default-logo 2.jpg";
-import { render } from "@testing-library/react";
+
 const AllListings = (props) => {
-  const { imageUrl, title, setActive, setKeyId, id, active, keyId, content } =
-    props;
+  const { title, setActive, setKeyId, id, active, keyId, content } = props;
 
   return (
     <li className={styles["list-item"]}>
@@ -15,7 +14,7 @@ const AllListings = (props) => {
         }}
         className={styles.image}
         referrerPolicy="no-referrer"
-        src={imageUrl.length > 0 ? imageUrl[0] : defaultLogo}
+        src={defaultLogo}
         alt={"all Courses"}
       />
       <p className={styles["list-text"]}>{title.toUpperCase()} </p>

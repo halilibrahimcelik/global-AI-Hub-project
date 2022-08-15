@@ -49,7 +49,6 @@ const AllCourses = () => {
                   key={id}
                   title={slug}
                   imageUrl={imgLinks}
-                  // {...course}
                   setActive={setActive}
                   active={active}
                   setKeyId={setKeyId}

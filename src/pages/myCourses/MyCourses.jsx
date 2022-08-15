@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import Listings from "../../components/listings/Listings";
 import Spinner from "../../components/spinner/Spinner";
 import { useAuthContext } from "../../hook/AuthContext";
-import styles from "./MyCourse.module.css";
-const MyCourses = () => {
+import styles from "./MyCourses.module.css";
+const MyCourse = () => {
   const { myCourses, loading } = useAuthContext();
   const [active, setActive] = useState(false);
   const [keyId, setKeyId] = useState("");
-  console.log(myCourses);
 
   return (
     <section>
@@ -47,4 +46,4 @@ const MyCourses = () => {
   );
 };
 
-export default MyCourses;
+export default MyCourse;
