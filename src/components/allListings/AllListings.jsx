@@ -25,6 +25,7 @@ const AllListings = (props) => {
             <>
               {id === keyId && (
                 <div
+                  data-aos="flip-down"
                   className={styles.content}
                   dangerouslySetInnerHTML={{
                     __html: content.rendered,

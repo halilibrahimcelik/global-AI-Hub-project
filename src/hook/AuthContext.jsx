@@ -44,9 +44,9 @@ const AuthContextProvider = (props) => {
         throw new Error("Unable to get the data!");
       }
       setAllCourses(data);
-      // setTimeout(() => {
-      //   setLoading(false);
-      // }, 1500);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1500);
     } catch (error) {
       console.log(error);
     }

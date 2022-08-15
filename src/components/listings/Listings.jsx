@@ -35,7 +35,7 @@ const Listings = (props) => {
       {active && id === keyId && (
         <div className={styles["pop-up-container"]}>
           {
-            <>
+            <div data-aos="zoom-in-up">
               <h3>
                 <strong className={styles["pop-up-header"]}>
                   Category <BiCategory />
@@ -65,7 +65,7 @@ const Listings = (props) => {
               >
                 Close
               </button>
-            </>
+            </div>
           }
         </div>
       )}

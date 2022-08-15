@@ -47,7 +47,7 @@ const AllCourses = () => {
           __html: newStr,
         }}
       /> */}
-      {loading && data.length === 0 ? (
+      {loading ? (
         <Spinner />
       ) : (
         <>
