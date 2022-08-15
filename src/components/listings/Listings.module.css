@@ -50,6 +50,11 @@ opacity: 1;
     align-items: center;
     font-size: 1.5rem;
 }
+
+.description{
+    font-style: italic;
+    font-weight: 600;
+}
 .pop-up-button{
     background-color:#c5303c;
     border: none;

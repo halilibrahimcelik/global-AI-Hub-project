@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Listings.module.css";
 import defaultLogo from "../../assets/default-logo.jpg";
 import { BiCategory } from "react-icons/bi";
@@ -8,7 +8,7 @@ import { GoLinkExternal } from "react-icons/go";
 const Listings = (props) => {
   const {
     card_image,
-
+    description,
     link,
     title,
     categories,
@@ -19,6 +19,7 @@ const Listings = (props) => {
     setKeyId,
     keyId,
   } = props;
+  console.log(description);
 
   return (
     <li className={styles["list-item"]}>
@@ -51,6 +52,10 @@ const Listings = (props) => {
                 <br />
                 {title}{" "}
               </p>
+              <p
+                className={styles.description}
+                dangerouslySetInnerHTML={{ __html: description }}
+              />
               <p>
                 <strong className={styles["pop-up-header"]}>
                   More Information:
