@@ -4,6 +4,7 @@ const AuthContext = createContext({
   myCourses: "",
   allCourses: "",
   loading: "",
+  setAllCourses: () => {},
 });
 
 export const useAuthContext = () => {
@@ -43,6 +44,9 @@ const AuthContextProvider = (props) => {
         throw new Error("Unable to get the data!");
       }
       setAllCourses(data);
+      // setTimeout(() => {
+      //   setLoading(false);
+      // }, 1500);
     } catch (error) {
       console.log(error);
     }
@@ -55,6 +59,7 @@ const AuthContextProvider = (props) => {
     myCourses: myCourses,
     allCourses: allCourses,
     loading: loading,
+    setAllCourses: setAllCourses,
   };
   return (
     <AuthContext.Provider value={contextValue}>
