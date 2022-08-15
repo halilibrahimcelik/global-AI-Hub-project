@@ -3,6 +3,7 @@ import { useContext, createContext, useEffect, useState } from "react";
 const AuthContext = createContext({
   myCourses: "",
   allCourses: "",
+  loading: "",
 });
 
 export const useAuthContext = () => {
@@ -12,6 +13,7 @@ export const useAuthContext = () => {
 const AuthContextProvider = (props) => {
   const [myCourses, setMyCourses] = useState([]);
   const [allCourses, setAllCourses] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const fetchMyCourses = async () => {
     try {
@@ -23,6 +25,7 @@ const AuthContextProvider = (props) => {
         throw new Error("Unable to get the data!");
       }
       setMyCourses(data);
+      setLoading(false);
     } catch (error) {
       console.log(error);
     }
@@ -51,6 +54,7 @@ const AuthContextProvider = (props) => {
   const contextValue = {
     myCourses: myCourses,
     allCourses: allCourses,
+    loading: loading,
   };
   return (
     <AuthContext.Provider value={contextValue}>
