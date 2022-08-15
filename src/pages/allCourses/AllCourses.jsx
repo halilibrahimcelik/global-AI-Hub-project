@@ -35,18 +35,8 @@ const AllCourses = () => {
     setImgLink([...img_series, ...imgLinks]);
   }, []);
 
-  console.log(imgLinks);
-
   return (
     <section>
-      {/* <ul
-        // dangerouslySetInnerHTML={{
-        //   __html: xxx?.rendered,
-        // }}
-        dangerouslySetInnerHTML={{
-          __html: newStr,
-        }}
-      /> */}
       {loading ? (
         <Spinner />
       ) : (
