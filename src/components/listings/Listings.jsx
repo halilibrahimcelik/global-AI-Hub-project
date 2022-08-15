@@ -28,7 +28,7 @@ const Listings = (props) => {
           setActive(true);
         }}
         className={styles.image}
-        referrerpolicy="no-referrer"
+        referrerPolicy="no-referrer"
         src={card_image ? card_image : defaultLogo}
         alt={title}
       />

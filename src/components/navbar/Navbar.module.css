@@ -1,7 +1,7 @@
 .navBar{
     width: 100%;
     height: 80px;
-    padding: 1rem;
+   
 
     background-color: #fff;
     color:#807d7d;
@@ -35,9 +35,16 @@ a, a:visited, a:hover, a:active {
 .nav-item-logo{
 display: flex;
 align-items: center;
+
 gap:0.5rem;
 }
 .active{
     color:black;
     font-weight: 800;
+}
+
+@media (max-width:600px) {
+    .navBar{
+        font-size: 1rem;
+    }
 }
