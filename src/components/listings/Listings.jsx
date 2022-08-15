@@ -19,7 +19,6 @@ const Listings = (props) => {
     setKeyId,
     keyId,
   } = props;
-  console.log(description);
 
   return (
     <li className={styles["list-item"]}>
